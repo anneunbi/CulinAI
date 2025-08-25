@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply border;
+  @apply border-solid;
+  @apply border-gray-300;
+  /* @apply rounded-md; */
+  @apply px-4;
+  @apply py-2;
+}
+
+.border-hairline {
+  @apply border border-black border-opacity-10;
+}
+
+.button {
+  @apply bg-black text-white rounded-r-md inline-block px-5 py-3;
+}
+
+.image-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+body {
+  background-size: 22.5px 22.5px;
+  background-image:
+    linear-gradient(to right, rgba(128, 128, 128, 0.198) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.198) 2px, transparent 2px);
+  font-family: Lexend-Peta;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+header {
+  padding: 20px;
+  background-color: #F1B6AD;
+}
+
+@font-face {
+  font-family: Lexend-Peta;
+  src: url(Lexend_Peta/static/LexendPeta-Regular.ttf);
+}
+
+nav {
+  text-decoration: none;
+  color: white;
+}
+
+nav a {
+  color: rgb(255, 240, 240);
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.592);
+  text-decoration: none;
+  color: rgb(61, 45, 45);
+  border-radius: 10px;
+
+}
+
+.button {
+  cursor: pointer;
+  font-family: Lexend-Peta;
+}
+
+.icon {
+  cursor: pointer;
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  top: 0.2em;
+  right: 0.2em;
+}
+
+main {
+  text-align: center;
+}
+
+/* landing page */
+#upload {
+  background-color: #FFE8BD;
+  width: 300px;
+  height: 320px;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#dragdrop {
+  background-color: #FFF8EB;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#upload_button {
+  background-color: #FFF8EB;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tinyImage {
+  width: '456px';
+  height: '356px';
+  max-width: none;
+}
+
+#uploadsvg {
+  width: 100px;
+  position: relative;
+  top: -25px;
+}
+
+#upload_text {
+  padding: 50px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#drag_text {
+  padding: 30px;
+}
+
+#generate_button {
+  background-color: rgb(246, 182, 172);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* saved recipes */
+#recipes {
+  background-color: #FFECDC;
+  width: 330px;
+  height: 400px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+#picture_border {
+  background-color: #887769;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+#starsvg {
+  width: 50px;
+}
+
+
+/* js classes */
+.hidden {
+  display: none;
+}
