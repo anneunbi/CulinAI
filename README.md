@@ -13,12 +13,12 @@ CulinAI is an intelligent web application that transforms your available ingredi
 
 ### ✨ Key Features
 
-- **📸 Smart Image Analysis** - AI-powered ingredient detection from photos
-- **🍽️ Personalized Recipes** - Custom recipes based on your available ingredients
-- **🎨 AI-Generated Visuals** - Beautiful recipe images created by Stable Diffusion
-- **📱 Modern Web Interface** - Responsive design that works on all devices
-- **⚡ Real-time Processing** - Instant recipe generation with live updates
-- **🌍 Zero Food Waste** - Make the most of what you already have
+- **Smart Image Analysis** - AI-powered ingredient detection from photos
+- **Personalized Recipes** - Custom recipes based on your available ingredients
+- **AI-Generated Visuals** - Beautiful recipe images created by Stable Diffusion
+- **Modern Web Interface** - Responsive design that works on all devices
+- **Real-time Processing** - Instant recipe generation with live updates
+- **Zero Food Waste** - Make the most of what you already have
 
 ## 🎯 Perfect For
 
@@ -190,6 +190,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Tailwind CSS** for the utility-first CSS approach
 - **OpenAI** for the LLaVa model
 - **Stability AI** for Stable Diffusion
+- **Tech@NYU** (Leia Yun, Phoebe Huang, Ann Lee, Ryan Kawahara (Tutor)) for initial project ideation & mentorship support!
 
 ## 📞 Support
 
