@@ -30,6 +30,8 @@ CulinAI is an intelligent web application that transforms your available ingredi
 
 ## 🚀 Live Demo
 
+https://github.com/user-attachments/assets/5434a5c6-a962-4746-9ee1-0c0ed4d7aa8c
+
 **🌐 Production Site**: [Deployed on Vercel](https://culin-9abbfl6u5-anneunbis-projects.vercel.app/)
 
 **💻 Local Development**: `http://localhost:3000`
