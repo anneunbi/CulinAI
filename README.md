@@ -1,6 +1,4 @@
-# CulinAI - Spring 2024 Tech Treks
-
-#### Leia Yun, Phoebe Huang, Ann Lee, Ryan Kawahara (Tutor)
+# CulinAI 
 
 ## Overview
 
