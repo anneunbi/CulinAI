@@ -1,64 +1,222 @@
-# CulinAI 
+# 🍳 CulinAI - AI-Powered Recipe Generator
 
-## Overview
+[![Next.js](https://img.shields.io/badge/Next.js-14.2.32-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3.5-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Replicate](https://img.shields.io/badge/Replicate-AI-FF6B6B?style=for-the-badge)](https://replicate.com/)
 
-### Purpose
+> **Turn Your Fridge Into Delicious Recipes** 🥕🥩🥚
 
-CulinAI is an AI-powered site that allows users to generate recipes by uploading a photo of their fridge or food items.
+## 🌟 Overview
 
-### Users
+CulinAI is an intelligent web application that transforms your available ingredients into personalized recipes using cutting-edge AI technology. Simply upload a photo of your fridge or ingredients, and our AI will analyze what you have and generate delicious, customized recipes.
 
-CulinAI is for those who:
+### ✨ Key Features
 
-- Want to try new recipes
-- Want to reduce food waste
-  -Don’t know what they can cook using the groceries that they already have
+- **📸 Smart Image Analysis** - AI-powered ingredient detection from photos
+- **🍽️ Personalized Recipes** - Custom recipes based on your available ingredients
+- **🎨 AI-Generated Visuals** - Beautiful recipe images created by Stable Diffusion
+- **📱 Modern Web Interface** - Responsive design that works on all devices
+- **⚡ Real-time Processing** - Instant recipe generation with live updates
+- **🌍 Zero Food Waste** - Make the most of what you already have
 
-### Why?
+## 🎯 Perfect For
 
-We wanted to explore the idea of “cooking with nothing.”
-CulinAI answers “What should I eat today?” without wasting or buying food.
+- **Home Cooks** who want to try new recipes
+- **Busy Professionals** looking for quick meal ideas
+- **Budget-Conscious** individuals who want to reduce food waste
+- **Creative Chefs** seeking inspiration from available ingredients
+- **Anyone** who asks "What can I cook with what I have?"
 
-### User Workflow
+## 🚀 Live Demo
 
-- Users upload ingredient photos via an easy-to-use homepage interface
-- Uploaded images are analyzed by the LLaVa model to detect ingredients
-- LLaVa uses detected ingredients to create and display recipes with Stable Diffusion-generated visuals
+**🌐 Production Site**: [Deployed on Vercel](https://culin-ai.vercel.app) _(Coming Soon)_
 
-## Demo
+**💻 Local Development**: `http://localhost:3000`
 
-https://github.com/user-attachments/assets/b4e3a8fe-7e37-4fd2-9273-5e4bec5eb3ae
+## 🏗️ Tech Stack
 
-## Noteworthy files
+### **Frontend**
 
-We used this [Next.js](https://nextjs.org/) template project that's preconfigured to work with Replicate's API.
+- **Next.js 14.2.32** - React framework with server-side rendering
+- **TypeScript 5.9.2** - Type-safe JavaScript development
+- **Tailwind CSS 3.3.5** - Utility-first CSS framework
+- **React 18.2.0** - Modern React with hooks and concurrent features
 
-- [pages/index.js](pages/index.js) - The React frontend that renders the home page in the browser
-- [pages/api/predictions/index.js](pages/api/predictions/index.js) - The backend API endpoint that calls Replicate's API to create a prediction
-- [pages/api/predictions/[id].js](pages/api/predictions/[id].js) - The backend API endpoint that calls Replicate's API to get the prediction result
+### **Backend & AI**
 
-## Usage
+- **Replicate API** - LLaVa model for ingredient detection
+- **Stable Diffusion** - AI-generated recipe images
+- **Next.js API Routes** - Serverless backend functions
+- **Node.js** - JavaScript runtime environment
 
-Install dependencies:
+### **Development Tools**
 
-```console
+- **ESLint** - Code quality and consistency
+- **PostCSS** - CSS processing and optimization
+- **Autoprefixer** - Automatic vendor prefixing
+
+## 📁 Project Structure
+
+```
+CulinAI/
+├── 📁 pages/                    # Next.js pages and API routes
+│   ├── 📄 index.tsx            # Main application interface
+│   ├── 📄 _app.tsx             # App wrapper and global styles
+│   └── 📁 api/                 # Backend API endpoints
+│       ├── 📁 predictions/     # Recipe generation API
+│       └── 📁 image_predictions/ # Image processing API
+├── 📁 public/                  # Static assets
+│   └── 🖼️ CulinAI-logo.png    # Application logo
+├── 📁 styles/                  # Global CSS and fonts
+│   └── 📄 globals.css         # Tailwind CSS and custom styles
+├── 📄 package.json             # Dependencies and scripts
+├── 📄 tsconfig.json            # TypeScript configuration
+├── 📄 tailwind.config.js       # Tailwind CSS configuration
+├── 📄 vercel.json              # Vercel deployment configuration
+└── 📄 .env.local               # Environment variables (not in repo)
+```
+
+## 🚀 Quick Start
+
+### **Prerequisites**
+
+- **Node.js** 18.0 or higher
+- **npm** or **yarn** package manager
+- **Replicate API Token** ([Get one here](https://replicate.com/account#token))
+
+### **1. Clone the Repository**
+
+```bash
+git clone https://github.com/anneunbi/CulinAI.git
+cd CulinAI
+```
+
+### **2. Install Dependencies**
+
+```bash
 npm install
 ```
 
-Add your [Replicate API token](https://replicate.com/account#token) to `.env.local`:
+### **3. Environment Setup**
 
+Create a `.env.local` file in the root directory:
+
+```env
+REPLICATE_API_TOKEN=your_replicate_api_token_here
 ```
-REPLICATE_API_TOKEN=<your-token-here>
-```
 
-Run the development server:
+### **4. Run Development Server**
 
-```console
+```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-For detailed instructions on how to create and use this template, see [replicate.com/docs/get-started/nextjs](https://replicate.com/docs/get-started/nextjs)
+### **5. Build for Production**
 
-<img width="707" alt="iguana" src="https://github.com/user-attachments/assets/4e0f4e7c-da88-410e-95b9-d74e0e58ddf4">
+```bash
+npm run build
+npm start
+```
+
+## 🌐 Deployment
+
+### **Vercel (Recommended)**
+
+1. **Connect Repository**: Import your GitHub repo to [Vercel](https://vercel.com)
+2. **Environment Variables**: Add `REPLICATE_API_TOKEN` in Vercel dashboard
+3. **Auto-Deploy**: Every push to main branch triggers automatic deployment
+
+### **Other Platforms**
+
+- **Netlify**: Supports Next.js with serverless functions
+- **Railway**: Good for full-stack applications
+- **AWS/GCP**: Enterprise-grade deployment options
+
+## 🔧 API Endpoints
+
+### **Recipe Generation**
+
+- **POST** `/api/predictions` - Generate recipes from ingredients
+- **GET** `/api/predictions/[id]` - Get prediction status and results
+
+### **Image Processing**
+
+- **POST** `/api/image_predictions` - Process and analyze food images
+- **GET** `/api/image_predictions/[id]` - Get image processing results
+
+## 🎨 Customization
+
+### **Styling**
+
+- **Colors**: Modify Tailwind CSS classes in components
+- **Fonts**: Update font imports in `styles/globals.css`
+- **Layout**: Adjust component structure in `pages/index.tsx`
+
+### **AI Models**
+
+- **Ingredient Detection**: Update LLaVa model version in API routes
+- **Image Generation**: Modify Stable Diffusion parameters
+- **Recipe Logic**: Customize AI prompts for different cuisines
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
+
+### **Development Guidelines**
+
+- Follow TypeScript best practices
+- Use Tailwind CSS for styling
+- Maintain responsive design
+- Test API endpoints thoroughly
+- Update documentation for new features
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Replicate** for providing powerful AI models
+- **Next.js** team for the excellent framework
+- **Tailwind CSS** for the utility-first CSS approach
+- **OpenAI** for the LLaVa model
+- **Stability AI** for Stable Diffusion
+
+## 📞 Support
+
+- **Issues**: [GitHub Issues](https://github.com/anneunbi/CulinAI/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/anneunbi/CulinAI/discussions)
+- **Email**: [Contact via GitHub](https://github.com/anneunbi)
+
+## 🔮 Roadmap
+
+- [ ] **User Accounts** - Save favorite recipes and preferences
+- [ ] **Recipe Categories** - Filter by cuisine, difficulty, and dietary restrictions
+- [ ] **Social Features** - Share recipes and cooking experiences
+- [ ] **Mobile App** - Native iOS and Android applications
+- [ ] **Voice Commands** - Hands-free recipe navigation
+- [ ] **Nutritional Information** - Detailed nutritional analysis
+- [ ] **Shopping Lists** - Generate shopping lists for missing ingredients
+
+---
+
+<div align="center">
+
+**Made with ❤️ for food lovers everywhere**
+
+_Turn your ingredients into culinary masterpieces with the power of AI_
+
+[![GitHub stars](https://img.shields.io/github/stars/anneunbi/CulinAI?style=social)](https://github.com/anneunbi/CulinAI/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/anneunbi/CulinAI?style=social)](https://github.com/anneunbi/CulinAI/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/anneunbi/CulinAI)](https://github.com/anneunbi/CulinAI/issues)
+
+</div>
