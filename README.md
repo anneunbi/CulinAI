@@ -30,7 +30,7 @@ CulinAI is an intelligent web application that transforms your available ingredi
 
 ## 🚀 Live Demo
 
-**🌐 Production Site**: [Deployed on Vercel](https://culin-ai.vercel.app) _(Coming Soon)_
+**🌐 Production Site**: [Deployed on Vercel](https://culin-9abbfl6u5-anneunbis-projects.vercel.app/)
 
 **💻 Local Development**: `http://localhost:3000`
 
